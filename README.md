@@ -1,27 +1,27 @@
-# BBVA2021
+# Hackthon BBVA 2021
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+## Integrantes
+- Brayan Javier Gomez Garcia
 
-## Development server
+## Reto Buscador de datos financieros
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+-----------------------------------------------------
+### Este preyecto esta desarrollado en angular, para colaborar es necesario clonar la rama de desarrollo y empezar a colaborar con el proyecto
 
-## Code scaffolding
+### Para clonar el proyecto en su equipo local, en una consola de comandos y en la carpeta que queremos que quede nuestros archivos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Digitamos el comando `git clone https://github.com/Brayan-Javier-Gomez/BBVA2021` 
+  
+###  Se descargara todo el codigo del proyecto, ahora debemos navegar hacia la carpeta con `cd BBVA2021`
 
-## Build
+### Para que podamos ejecutar, ver lo que va del proyecto o empezar a desarrollar es necesario antes instalar los modulos de nodeJS,
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `npm install`
 
-## Running unit tests
+### De esta forma se instalaran todas las dependencias que requiera el proyecto.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Ahora para lanzar y ejeccutar nuestra aplicacion de angular.
 
-## Running end-to-end tests
+- `ng serve`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Y listo.
