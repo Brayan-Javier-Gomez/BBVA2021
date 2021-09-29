@@ -12,7 +12,8 @@
 
 - Digitamos el comando `git clone https://github.com/Brayan-Javier-Gomez/BBVA2021` 
   
-###  Se descargara todo el codigo del proyecto, ahora debemos navegar hacia la carpeta con `cd BBVA2021`
+###  Se descargara todo el codigo del proyecto, ahora debemos navegar hacia la carpeta con:
+ - `cd BBVA2021`
 
 ### Para que podamos ejecutar, ver lo que va del proyecto o empezar a desarrollar es necesario antes instalar los modulos de nodeJS,
 
