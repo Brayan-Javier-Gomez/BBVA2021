@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BBVA2021';
+  SERVER = 'localhost:8000';
 }

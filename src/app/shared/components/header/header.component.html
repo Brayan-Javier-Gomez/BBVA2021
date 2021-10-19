@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">
+       <i class="fas fa-user-clock"></i>
+       HACKATHON BBVA
+    </a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"
+         id="navbarNav">
+        <ul class="navbar-nav ml-auto headerNav">
+            <li class="nav-item">
+                <a class="nav-link"
+                   routerLinkActive="active">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   routerLinkActive="active">Login</a>
+            </li>
+            <li class="nav-item dropdown profile-dropdown-container"
+                dropdown>
+                <span>
+                    <img alt="Profile Image">
+                </span>
+                <a class="nav-link"
+                   dropdownToggle>
+                    Welcome Johann
+                </a>
+                <div class="dropdown-menu dropdown-menu-right"
+                     *dropdownMenu>
+                    <a class="dropdown-item"
+                       routerLinkActive="active">
+                       <i class="fas fa-key"></i> 
+                       Reset Password</a>
+                    <a class="dropdown-item"
+                       routerLinkActive="active">
+                       <i class="fas fa-user-edit"></i>
+                       Edit Profile</a>
+                    <a class="dropdown-item"
+                       (click)="logout();">
+                       <i class="fas fa-sign-out-alt"></i> 
+                       Logout</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
