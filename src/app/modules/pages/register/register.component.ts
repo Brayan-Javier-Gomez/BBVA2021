@@ -15,18 +15,31 @@ export class RegisterComponent{
     email:['' , [Validators.required, Validators.email]],
     password:['',  [Validators.required, Validators.minLength(4)]]
   })
-
+  rememberMe: boolean;
+  
   constructor(
     private fb :FormBuilder, 
     private router:Router,
     private basicService: BasicsService,
-    ) { }
+    ) { 
+      this.rememberMe = true;
+    }
 
   register(){
     console.log(this.dataRegister.value)
     this.basicService.registerAjax(this.dataRegister.value).subscribe(
       data => {
-        console.log(data);
+        if ( data['status'] ){
+          const userName = data['user'].first_name + data['user'].last_name;
+          const idUser = data['user'].id;
+          const token = data['rest'].access_token;
+          const refreshToken = data['rest'].refresh_token;
+          window.localStorage.setItem('login','login');
+          localStorage.setItem('idUser', idUser.toString());
+          localStorage.setItem('userName', userName);
+          localStorage.setItem('token', token.toString());
+          window.localStorage.setItem('remember_me', this.rememberMe.toString());
+        }
         this.router.navigateByUrl("/dashboard")
       }
     )
