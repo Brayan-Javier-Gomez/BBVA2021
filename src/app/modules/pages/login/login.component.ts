@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { BasicsService } from 'src/app/core/services/basics/basics.service';
 
 @Component({
   selector: 'app-login',
@@ -14,14 +15,22 @@ export class LoginComponent {
 
   });
 
-  constructor(private fb: FormBuilder,
-              private router: Router) { }
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private basicService: BasicsService,
+    ) { }
 
 
   login() {
-    console.log(this.dataFormulario.value)
-
-    this.router.navigateByUrl("/dashboard")
+    console.log(this.dataFormulario.value);
+    this.basicService.loginAuth(this.dataFormulario.value).subscribe(
+      data => {
+        console.log(data);
+        this.router.navigateByUrl("/dashboard");
+      }
+    )
+    
   }
 
 }
