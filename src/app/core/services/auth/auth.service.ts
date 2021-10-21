@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-login(){
-  
-}
+  login(email: string, password: string) {
+
+  }
 
 }
