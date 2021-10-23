@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-export const SERVER = 'http://localhost:8000';
+export const SERVER = 'https://4d6b-190-232-74-56.ngrok.io';
 
 @Component({
   selector: 'app-root',

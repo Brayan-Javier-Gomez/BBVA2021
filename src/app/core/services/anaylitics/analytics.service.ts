@@ -4,17 +4,15 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { SERVER } from '../../../app.component';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AnalyticsService {
   IdUser: any;
   Token: any;
 
-  constructor(
-    public http: HttpClient,
-  ) {}
+  constructor(public http: HttpClient) {}
 
-  initializeItems(){
+  initializeItems() {
     const rememberMe = localStorage.getItem('remember_me');
     const login = localStorage.getItem('login');
     if (login === 'login') {
@@ -28,29 +26,51 @@ export class AnalyticsService {
     }
   }
 
-  getDataBank(idBank){
+  getDataBank(idBank) {
     this.initializeItems();
     let headers = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/json');
     headers = headers.append('Authorization', 'Bearer ' + this.Token);
     let params = new HttpParams();
     params = params.append('id_user', this.IdUser);
-    if (idBank) { params = params.append('id_bank', idBank); }
+    if (idBank) {
+      params = params.append('id_bank', idBank);
+    }
     const options = { headers: headers, params: params };
-    const response = this.http.get(SERVER + '/resource/institution-api/', options);
+    const response = this.http.get(
+      SERVER + '/resource/institution-api/',
+      options
+    );
     return response;
   }
 
-  getFiles(idBank){
+  getFiles(idBank) {
     this.initializeItems();
     let headers = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/json');
     headers = headers.append('Authorization', 'Bearer ' + this.Token);
     let params = new HttpParams();
     params = params.append('id_user', this.IdUser);
-    if (idBank) { params = params.append('id_bank', idBank); }
+    if (idBank) {
+      params = params.append('id_bank', idBank);
+    }
     const options = { headers: headers, params: params };
-    const response = this.http.get(SERVER + '/resource/user-institution-file-api/', options);
+    const response = this.http.get(
+      SERVER + '/resource/user-institution-file-api/',
+      options
+    );
+    return response;
+  }
+
+  getCategories() {
+    this.initializeItems();
+    let headers = new HttpHeaders();
+    headers = headers.append('Content-Type', 'application/json');
+    headers = headers.append('Authorization', 'Bearer ' + this.Token);
+    let params = new HttpParams();
+    params = params.append('id_user', this.IdUser);
+    const options = { headers: headers, params: params };
+    const response = this.http.get(SERVER + '/detail/category-api/', options);
     return response;
   }
 }
