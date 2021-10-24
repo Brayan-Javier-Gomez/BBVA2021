@@ -9,6 +9,7 @@ import { ScannerPageComponent } from './scanner-page/scanner-page.component';
 import { FormsModule } from '@angular/forms';
 import { RecommendationPageComponent } from './recommendation-page/recommendation-page.component';
 import { BasePageComponent } from './base-page/base-page.component';
+import { BalanceGeneralComponent } from './balance-general/balance-general.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { BasePageComponent } from './base-page/base-page.component';
     ScannerPageComponent,
     RecommendationPageComponent,
     BasePageComponent,
+    BalanceGeneralComponent,
   ],
   imports: [
     CommonModule,

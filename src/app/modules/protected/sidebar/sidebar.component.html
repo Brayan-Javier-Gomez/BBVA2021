@@ -3,7 +3,10 @@
   id="sidenav-collapse-main"
 >
   <ul class="navbar-nav container-fluid">
-    <img src="../assets/img/FINITA-logotipo.svg" alt="logo" />
+    <a routerLink="/dashboard">
+
+      <img src="../assets/img/FINITA-logotipo.svg" alt="logo" />
+    </a>
     <li class="nav-item">
       <a class="nav-link" routerLink="/dashboard" routerLinkActive>
         <div
@@ -44,7 +47,7 @@
 
     <li class="nav-item m-0 p-0 border-0">
       <a class="nav-link" routerLink="/dashboard/files" routerLinkActive>
-        <div class="accordion p-0 m-0" id="accordionExample">
+        <div class="accordion p-0 m-0 accordion-flush open" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button
@@ -81,7 +84,7 @@
             >
               <div class="accordion-body p-0">
                 <li class="nav-item my-2">
-                  <a class="" routerLink="/dashboard" routerLinkActive>
+                  <a class="" routerLink="/dashboard/balance-general" routerLinkActive>
                     <span class="ms-1 text-dark">Balance general</span>
                   </a>
                 </li>
