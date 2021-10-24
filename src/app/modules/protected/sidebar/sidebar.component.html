@@ -1,13 +1,11 @@
-
 <div
   class="collapse navbar-collapse w-auto max-height-vh-100"
   id="sidenav-collapse-main"
 >
-  <ul class="navbar-nav">
+  <ul class="navbar-nav container-fluid">
     <img src="../assets/img/FINITA-logotipo.svg" alt="logo" />
     <li class="nav-item">
       <a class="nav-link" routerLink="/dashboard" routerLinkActive>
-        
         <div
           class="
             text-white text-center
@@ -19,10 +17,10 @@
         >
           <i class="material-icons text-dark">dashboard</i>
         </div>
-        <span class="nav-link-text ms-1 text-dark">Dashboard</span>
+        <span class="nav-link-text ms-1 text-dark">Inicio</span>
       </a>
     </li>
-  
+
     <li class="nav-item">
       <a
         class="nav-link text-white"
@@ -41,6 +39,146 @@
           <i class="material-icons text-dark">document_scanner</i>
         </div>
         <span class="nav-link-text ms-1 text-dark">Documentos</span>
+      </a>
+    </li>
+
+    <li class="nav-item m-0 p-0 border-0">
+      <a class="nav-link" routerLink="/dashboard/files" routerLinkActive>
+        <div class="accordion p-0 m-0" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button text-center text-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <i class="material-icons text-dark">leaderboard</i>
+                <span class="ms-1 text-dark">Datos de consulta</span>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-0">
+                <li class="nav-item my-2 ">
+                  <a class="" routerLink="/dashboard">
+                    <span class="ms-1 text-dark text-decoration-none">Estado de resultados</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-0">
+                <li class="nav-item my-2">
+                  <a class="" routerLink="/dashboard" routerLinkActive>
+                    <span class="ms-1 text-dark">Balance general</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-0">
+                <li class="nav-item my-2">
+                  <a class="" routerLink="/dashboard" routerLinkActive>
+                    <span class="ms-1 text-dark">Cuentas de orden</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-0">
+                <li class="nav-item my-2">
+                  <a class="" routerLink="/dashboard" routerLinkActive>
+                    <span class="ms-1 text-dark">Estado de flujos</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-0">
+                <li class="nav-item my-2">
+                  <a class="" routerLink="/dashboard" routerLinkActive>
+                    <span class="ms-1 text-dark">Estado de variaciones</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-0">
+                <li class="nav-item my-2">
+                  <a class="" routerLink="/dashboard" routerLinkActive>
+                    <span class="ms-1 text-dark">Movimientos de cartera</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-0">
+                <li>
+                  <a class="nav-item my-2" routerLink="/dashboard" routerLinkActive>
+                    <span class="ms-1 text-dark">Coeficiente de cobertura</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body p-0">
+                <li class="nav-item my-2">
+                  <a class="" routerLink="/dashboard" routerLinkActive>
+                    <span class="ms-1 text-dark">Extras</span>
+                  </a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
       </a>
     </li>
 

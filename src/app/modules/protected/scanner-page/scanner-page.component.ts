@@ -94,6 +94,7 @@ export class ScannerPageComponent implements OnInit {
       data => {
         this.allFiles = data;
         this.showLoading = false;
+        console.log(data[0])
     })
   }
 
