@@ -73,4 +73,33 @@ export class AnalyticsService {
     const response = this.http.get(SERVER + '/detail/category-api/', options);
     return response;
   }
+
+  getReport(idReport){
+    this.initializeItems();
+    let headers = new HttpHeaders();
+    headers = headers.append('Content-Type', 'application/json');
+    headers = headers.append('Authorization', 'Bearer ' + this.Token);
+    let params = new HttpParams();
+    params = params.append('id_user', this.IdUser);
+    params = params.append('id_report', idReport);
+    const options = { headers: headers, params: params };
+    const response = this.http.get(SERVER + '/detail/data-report-api/', options);
+    return response;
+  }
+
+  getDataFilter(idBank,idReport,idSeason){
+    this.initializeItems();
+    let headers = new HttpHeaders();
+    headers = headers.append('Content-Type', 'application/json');
+    headers = headers.append('Authorization', 'Bearer ' + this.Token);
+    let params = new HttpParams();
+    params = params.append('id_user', this.IdUser);
+    if ( idSeason ) { params = params.append('id_season', idSeason);}
+    params = params.append('id_bank', idBank);
+    params = params.append('id_report', idReport);
+    const options = { headers: headers, params: params };
+    const response = this.http.get(SERVER + '/detail/details-data-api/', options);
+    return response;
+  }
+
 }
