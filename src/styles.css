@@ -307,7 +307,7 @@
     width: 300%;
     height: 100%;
     background: rgb(96,207,220);
-    background: linear-gradient(90deg, rgba(96,207,220,1) 0%, rgba(190,52,218,1) 92%);
+    background: linear-gradient(90deg, #2DCCCD 5%, rgba(190,52,218,1) 92%);
     top: 0;
     left: -100%;
   

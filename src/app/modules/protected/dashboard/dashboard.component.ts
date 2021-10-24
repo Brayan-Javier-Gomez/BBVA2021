@@ -76,6 +76,33 @@ export class DashboardComponent {
     this.getFiles();
   }
 
+  redirection(id){
+    if(id == 1){
+      this.router.navigateByUrl('dashboard/estado-resultados')
+    }
+    if(id == 2){
+      this.router.navigateByUrl('dashboard/balance-general')
+    }
+    if(id == 3){
+      this.router.navigateByUrl('dashboard/cuentas-orden')
+    }
+    if(id == 4){
+      this.router.navigateByUrl('dashboard/estado-flujos')
+    }
+    if(id == 5){
+      this.router.navigateByUrl('dashboard/estado-variaciones')
+    }
+    if(id == 6){
+      this.router.navigateByUrl('dashboard/movimientos-cartera')
+    }
+    if(id == 7){
+      this.router.navigateByUrl('dashboard/coeficientes-cobertura')
+    }
+    if(id == 8){
+      this.router.navigateByUrl('dashboard/extras')
+    }
+  }
+
   exitLogin(err) {
     if (err.status === 401) {
       localStorage.clear();

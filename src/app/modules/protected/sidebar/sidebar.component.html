@@ -48,7 +48,7 @@
     <li class="nav-item m-0 p-0 border-0">
       <a class="nav-link" style="padding-left: 0 !important; 
       padding-top: 0 !important; 
-      padding-bottom: 0 !important;" routerLink="/dashboard/files" routerLinkActive>
+      padding-bottom: 0 !important;"  routerLinkActive>
         <div class="accordion p-0 m-0 accordion-flush open" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -59,6 +59,7 @@
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
                 aria-controls="collapseOne"
+                routerLink="/dashboard"
               >
                 <i class="material-icons text-dark">leaderboard</i>
                 <span class="ms-1 text-dark">Datos de consulta</span>
@@ -72,7 +73,7 @@
             >
               <div class="accordion-body p-0">
                 <li class="nav-item my-2 ">
-                  <a class="" routerLink="/dashboard">
+                  <a class="" routerLink="/dashboard/estado-resultados">
                     <span class="ms-1 text-dark text-decoration-none">Estado de resultados</span>
                   </a>
                 </li>
@@ -101,7 +102,7 @@
             >
               <div class="accordion-body p-0">
                 <li class="nav-item my-2">
-                  <a class="" routerLink="/dashboard" routerLinkActive>
+                  <a class="" routerLink="/dashboard/cuentas-orden" routerLinkActive>
                     <span class="ms-1 text-dark">Cuentas de orden</span>
                   </a>
                 </li>
@@ -116,7 +117,7 @@
             >
               <div class="accordion-body p-0">
                 <li class="nav-item my-2">
-                  <a class="" routerLink="/dashboard" routerLinkActive>
+                  <a class="" routerLink="/dashboard/estado-flujos" routerLinkActive>
                     <span class="ms-1 text-dark">Estado de flujos</span>
                   </a>
                 </li>
@@ -131,7 +132,7 @@
             >
               <div class="accordion-body p-0">
                 <li class="nav-item my-2">
-                  <a class="" routerLink="/dashboard" routerLinkActive>
+                  <a class="" routerLink="/dashboard/estado-variaciones" routerLinkActive>
                     <span class="ms-1 text-dark">Estado de variaciones</span>
                   </a>
                 </li>
@@ -146,7 +147,7 @@
             >
               <div class="accordion-body p-0">
                 <li class="nav-item my-2">
-                  <a class="" routerLink="/dashboard" routerLinkActive>
+                  <a class="" routerLink="/dashboard/movimientos-cartera" routerLinkActive>
                     <span class="ms-1 text-dark">Movimientos de cartera</span>
                   </a>
                 </li>
@@ -161,7 +162,7 @@
             >
               <div class="accordion-body p-0">
                 <li>
-                  <a class="nav-item my-2" routerLink="/dashboard" routerLinkActive>
+                  <a class="nav-item my-2" routerLink="/dashboard/coeficientes-cobertura" routerLinkActive>
                     <span class="ms-1 text-dark">Coeficiente de cobertura</span>
                   </a>
                 </li>
@@ -176,7 +177,7 @@
             >
               <div class="accordion-body p-0">
                 <li class="nav-item my-2">
-                  <a class="" routerLink="/dashboard" routerLinkActive>
+                  <a class="" routerLink="/dashboard/extras" routerLinkActive>
                     <span class="ms-1 text-dark">Extras</span>
                   </a>
                 </li>
@@ -196,7 +197,7 @@
         </a>
       </li>-->
     <li class="nav-item">
-      <a class="nav-link text-white" href="../pages/sign-in.html">
+      <a class="nav-link text-white" routerLink="/auth/login">
         <div
           class="
             text-white text-center
